@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand colors */
+    --reform-blue: #00125A;
+    --reform-mint: #69D1B4;
+    --reform-purple: #A087FE;
+    --reform-blue-light: rgba(0, 18, 90, 0.08);
+
+    --background: 0 0% 99%;
+    --foreground: 228 100% 18%; /* #00125A */
+    --card: 0 0% 100%;
+    --card-foreground: 228 100% 18%;
+    --primary: 228 100% 18%; /* #00125A */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 165 52% 93%;
+    --secondary-foreground: 228 100% 18%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 10% 50%;
+    --accent: 165 52% 88%; /* mint tint */
+    --accent-foreground: 228 100% 18%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 90%;
+    --input: 220 13% 90%;
+    --ring: 228 100% 18%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Button system — applies to all phases */
+.btn-start,
+.btn-primary { transition: background 0.15s, transform 0.1s, opacity 0.15s; }
+.btn-start:hover,
+.btn-primary:not(:disabled):hover { background: #4ec8a8 !important; }
+.btn-start:active,
+.btn-primary:not(:disabled):active { transform: scale(0.97); }
+
+.btn-ghost { transition: background 0.15s, border-color 0.15s; }
+.btn-ghost:not(:disabled):hover { background: rgba(100,210,180,0.12) !important; border-color: rgba(100,210,180,0.75) !important; }
+.btn-ghost:not(:disabled):active { background: rgba(100,210,180,0.2) !important; }
+
+.btn-text { transition: opacity 0.15s; }
+.btn-text:hover { opacity: 0.65 !important; }
+
+.answer-option { transition: background 0.12s; }
+.answer-option:not(.selected):hover { background: rgba(255,255,255,0.1) !important; }
+.answer-option.selected { background: rgba(255,255,255,0.15) !important; }
+
+.btn-chip { transition: background 0.12s, border-color 0.12s; }
+.btn-chip:hover { background: rgba(255,255,255,0.12) !important; border-color: rgba(255,255,255,0.32) !important; }
+
+.katalog-btn-ghost { transition: background 0.15s, border-color 0.15s; }
+.katalog-btn-ghost:hover { background: rgba(100,210,180,0.1) !important; }

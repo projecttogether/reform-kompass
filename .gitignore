@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env*.example
+.claude/settings.local.json
+node_modules/
+.next/
+out/
+*.log
+.DS_Store
+*.tsbuildinfo

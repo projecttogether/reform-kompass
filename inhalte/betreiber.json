@@ -1,0 +1,9 @@
+{
+  "name": "Reform-Kompass",
+  "fusszeile": [
+    {
+      "text": "Beispielinstallation mit neutralen Inhalten.",
+      "link": { "text": "Quellcode →", "url": "https://github.com/projecttogether/reform-kompass" }
+    }
+  ]
+}

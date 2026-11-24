@@ -1,0 +1,306 @@
+{
+ "quelle": "OParl-Endpunktverzeichnis (dev.oparl.org) und Ratsinformationssysteme der Kommunen",
+ "stand": "05.11.2026",
+ "koerperschaften": {
+  "03252003": {
+   "name": "Bad Pyrmont, Stadt",
+   "paper": "https://badpyrmont.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "03352050": {
+   "name": "Schiffdorf",
+   "paper": "https://schiffdorf.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "03454023": {
+   "name": "Hüven",
+   "paper": "https://soegel.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "03457020": {
+   "name": "Uplengen",
+   "paper": "https://uplengen.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "03459033": {
+   "name": "Wallenhorst",
+   "paper": "https://wallenhorst.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05114000": {
+   "name": "Krefeld, Stadt",
+   "paper": "https://oparl.politik-bei-uns.de/body/5c476a1b2c66dc3b52c4c9cf/paper"
+  },
+  "05122000": {
+   "name": "Solingen, Klingenstadt",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4957/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05124000": {
+   "name": "Wuppertal, Stadt",
+   "paper": "http://oparl.wuppertal.de/oparl/bodies/0001/papers"
+  },
+  "05154016": {
+   "name": "Goch, Stadt",
+   "paper": "https://ris.goch.de/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05154060": {
+   "name": "Wachtendonk",
+   "paper": "https://ris.wachtendonk.de/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05166024": {
+   "name": "Schwalmtal",
+   "paper": "https://ris.schwalmtal.de/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05166036": {
+   "name": "Willich, Stadt",
+   "paper": "https://oparl.politik-bei-uns.de/body/5a70bbe0835b944a49c61b66/paper"
+  },
+  "05315000": {
+   "name": "Köln, Stadt",
+   "paper": "https://buergerinfo.stadt-koeln.de/oparl/bodies/stadtverwaltung_koeln/papers"
+  },
+  "05358004": {
+   "name": "Aldenhoven",
+   "paper": "https://ratsinfo.aldenhoven.de/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05358016": {
+   "name": "Hürtgenwald",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4220/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05358020": {
+   "name": "Inden",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4230/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05358024": {
+   "name": "Jülich, Stadt",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4240/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05358028": {
+   "name": "Kreuzau",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4250/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05358032": {
+   "name": "Langerwehe",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4260/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05358036": {
+   "name": "Linnich, Stadt",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4270/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05358040": {
+   "name": "Merzenich",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4280/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05358052": {
+   "name": "Nörvenich",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4160/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05358056": {
+   "name": "Titz",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4170/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05358060": {
+   "name": "Vettweiß",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4180/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05362004": {
+   "name": "Bedburg, Stadt",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4780/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05362008": {
+   "name": "Bergheim, Stadt",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4800/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05362012": {
+   "name": "Brühl, Stadt",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4410/webservice/oparl/v1.0/body/1/paper"
+  },
+  "05362020": {
+   "name": "Erftstadt, Stadt",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4490/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05362032": {
+   "name": "Kerpen, Kolpingstadt",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4770/webservice/oparl/v1.0/body/1/paper"
+  },
+  "05362036": {
+   "name": "Pulheim, Stadt",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4350/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05362040": {
+   "name": "Wesseling, Stadt",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4420/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05366004": {
+   "name": "Bad Münstereifel, Stadt",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4500/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05366024": {
+   "name": "Kall",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4550/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05366032": {
+   "name": "Nettersheim",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4580/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05366040": {
+   "name": "Weilerswist",
+   "paper": "https://sdnetrim.kdvz-frechen.de/rim4510/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05515000": {
+   "name": "Münster, Stadt",
+   "paper": "https://oparl.stadt-muenster.de/bodies/0001/papers"
+  },
+  "05554020": {
+   "name": "Gronau (Westf.), Stadt",
+   "paper": "https://gronau.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05554064": {
+   "name": "Velen, Stadt",
+   "paper": "https://velen.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05566032": {
+   "name": "Ladbergen",
+   "paper": "https://ladbergen.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05754024": {
+   "name": "Langenberg",
+   "paper": "https://ratsinfo.langenberg.de/webservice/oparl/v1.0/body/1/paper"
+  },
+  "05754028": {
+   "name": "Rheda-Wiedenbrück, Stadt",
+   "paper": "https://ratsinfo.rheda-wiedenbrueck.de/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05754040": {
+   "name": "Steinhagen",
+   "paper": "https://ratsinfo.steinhagen.de/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05758008": {
+   "name": "Enger, Widukindstadt",
+   "paper": "https://enger.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05758012": {
+   "name": "Herford, Hansestadt",
+   "paper": "https://herford.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05758016": {
+   "name": "Hiddenhausen",
+   "paper": "https://hiddenhausen.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05758020": {
+   "name": "Kirchlengern",
+   "paper": "https://kirchlengern.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05758028": {
+   "name": "Rödinghausen",
+   "paper": "https://roedinghausen.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05758032": {
+   "name": "Spenge, Stadt",
+   "paper": "https://spenge.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05758036": {
+   "name": "Vlotho, Stadt",
+   "paper": "https://vlotho.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05766048": {
+   "name": "Leopoldshöhe",
+   "paper": "https://leopoldshoehe.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05770040": {
+   "name": "Rahden, Stadt",
+   "paper": "https://rahden.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "05770044": {
+   "name": "Stemwede",
+   "paper": "https://stemwede.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "06434003": {
+   "name": "Glashütten",
+   "paper": "https://rim.ekom21.de/glashuetten/webservice/oparl/v1.1/body/1/paper"
+  },
+  "06434006": {
+   "name": "Kronberg im Taunus, Stadt",
+   "paper": "https://kronberg.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "06434009": {
+   "name": "Schmitten im Taunus",
+   "paper": "https://rim.ekom21.de/schmitten/webservice/oparl/v1.1/body/1/paper"
+  },
+  "06439001": {
+   "name": "Aarbergen",
+   "paper": "https://rim.ekom21.de/aarbergen/webservice/oparl/v1.1/body/1/paper"
+  },
+  "06531004": {
+   "name": "Fernwald",
+   "paper": "https://rim.ekom21.de/fernwald/webservice/oparl/v1.1/body/1/paper"
+  },
+  "06532008": {
+   "name": "Ehringshausen",
+   "paper": "https://rim.ekom21.de/ehringshausen/webservice/oparl/v1.1/body/1/paper"
+  },
+  "06533016": {
+   "name": "Waldbrunn (Westerwald)",
+   "paper": "https://rim.ekom21.de/waldbrunn/webservice/oparl/v1.1/body/1/paper"
+  },
+  "06534006": {
+   "name": "Cölbe",
+   "paper": "https://rim.ekom21.de/coelbe/webservice/oparl/v1.1/body/1/paper"
+  },
+  "06535009": {
+   "name": "Homberg (Ohm), Stadt",
+   "paper": "https://rim.ekom21.de/homberg-ohm/webservice/oparl/v1.1/body/1/paper"
+  },
+  "06633017": {
+   "name": "Lohfelden",
+   "paper": "https://lohfelden.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "06634008": {
+   "name": "Guxhagen",
+   "paper": "https://rim.ekom21.de/guxhagen/webservice/oparl/v1.1/body/1/paper"
+  },
+  "06634009": {
+   "name": "Homberg (Efze), Reformationsstadt, Kreisstadt",
+   "paper": "https://rim.ekom21.de/homberg-efze/webservice/oparl/v1.1/body/1/paper"
+  },
+  "06634023": {
+   "name": "Schwarzenborn, Stadt",
+   "paper": "https://rim.ekom21.de/schwarzenborn/webservice/oparl/v1.1/body/1/paper"
+  },
+  "06635022": {
+   "name": "Willingen (Upland)",
+   "paper": "https://rim.ekom21.de/willingen/webservice/oparl/v1.1/body/1/paper"
+  },
+  "06636004": {
+   "name": "Großalmerode, Stadt",
+   "paper": "https://rim.ekom21.de/grossalmerode/webservice/oparl/v1.1/body/1/paper"
+  },
+  "06636006": {
+   "name": "Hessisch Lichtenau, Stadt",
+   "paper": "https://rim.ekom21.de/hessisch-lichtenau/webservice/oparl/v1.1/body/1/paper"
+  },
+  "07133006": {
+   "name": "Bad Kreuznach, Stadt",
+   "paper": "https://bad-kreuznach-stadt.gremien.info/oparl/body/KH/paper"
+  },
+  "07317000": {
+   "name": "Pirmasens, Stadt",
+   "paper": "https://oparl.stadt-pirmasens.de/oparl/bodies/0001/papers"
+  },
+  "08311000": {
+   "name": "Freiburg im Breisgau, Stadt",
+   "paper": "https://ris.freiburg.de/oparl/body/FR/paper"
+  },
+  "08317065": {
+   "name": "Lahr/Schwarzwald, Stadt",
+   "paper": "https://lahr.ratsinfomanagement.net/webservice/oparl/v1.1/body/1/paper"
+  },
+  "08421000": {
+   "name": "Ulm, Universitätsstadt",
+   "paper": "http://buergerinfo.ulm.de/oparl/bodies/0001/papers"
+  },
+  "09162000": {
+   "name": "München, Landeshauptstadt",
+   "paper": "https://www.muenchen-transparent.de/oparl/v1.0/list/paper"
+  },
+  "14612000": {
+   "name": "Dresden, Stadt",
+   "paper": "http://oparl.dresden.de/bodies/0001/papers"
+  }
+ }
+}

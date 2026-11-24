@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security issue privately
+    url: https://github.com/projecttogether/reform-kompass/security/advisories/new
+    about: Do not post credentials or sensitive assessment data in an issue.

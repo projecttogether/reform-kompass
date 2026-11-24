@@ -1,0 +1,15 @@
+Reform-Kompass
+Copyright 2026 ProjectTogether gGmbH and contributors
+
+Developed by the initiative Re:Form of ProjectTogether.
+
+This product includes the fonts Rubik and Fraunces, licensed under the
+SIL Open Font License 1.1 (src/app/fonts/OFL-Rubik.txt and
+src/app/fonts/OFL-Fraunces.txt).
+
+The data files in src/data/ come from third parties and keep their own terms;
+see src/data/README.md:
+- Statistisches Bundesamt (Destatis)
+- Statistik der Bundesagentur für Arbeit
+- Bertelsmann Stiftung, Wegweiser Kommune (CC0 1.0)
+- OParl endpoint directory

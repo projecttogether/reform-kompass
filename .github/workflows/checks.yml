@@ -1,0 +1,96 @@
+name: Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: checks-${{ github.ref }}
+  # Runs on main publish an image, so let them finish.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  application:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      NEXT_TELEMETRY_DISABLED: "1"
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run lint -- --max-warnings=0
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      - run: npm audit --omit=dev --audit-level=moderate
+
+  secrets:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      # The CLI needs no organization license key or provider credentials.
+      - name: Install the pinned Gitleaks CLI
+        working-directory: ${{ runner.temp }}
+        run: |
+          curl --fail --silent --show-error --location --retry 3 \
+            https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz \
+            --output gitleaks.tar.gz
+          echo '551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb  gitleaks.tar.gz' | sha256sum --check
+          tar -xzf gitleaks.tar.gz gitleaks
+      - name: Scan the checked-out history without exposing matches
+        run: '"${{ runner.temp }}/gitleaks" git . --log-opts=HEAD --redact=100 --no-banner'
+
+  # Builds the image on every run; publishes it only from main.
+  image:
+    needs: [application, secrets]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      packages: write
+    env:
+      IMAGE: ghcr.io/${{ github.repository }}
+      PUBLISH: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Build the image
+        run: |
+          docker build . --tag app:check \
+            --label "org.opencontainers.image.source=https://github.com/$GITHUB_REPOSITORY" \
+            --label "org.opencontainers.image.revision=$GITHUB_SHA" \
+            --label "org.opencontainers.image.licenses=Apache-2.0"
+      - name: Check that it starts with its content
+        run: |
+          docker run --detach --name app --publish 127.0.0.1:3000:3000 app:check
+          for _ in $(seq 30); do curl -fs http://127.0.0.1:3000/-/healthz >/dev/null && break; sleep 1; done
+          curl -fsS http://127.0.0.1:3000/ | grep -q '<title>Reform-Kompass</title>'
+          curl -fsS http://127.0.0.1:3000/check >/dev/null
+          for file in logo-hell.svg logo-dunkel.svg icon.svg; do curl -fsS "http://127.0.0.1:3000/marke/$file" >/dev/null; done
+          docker logs app 2>&1 | grep -F 'Inhalte: /app/inhalte (Reform-Kompass).'
+      - name: Publish the image
+        if: env.PUBLISH == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          printf '%s' "$GITHUB_TOKEN" | docker login ghcr.io -u "$GITHUB_ACTOR" --password-stdin
+          for tag in "sha-$GITHUB_SHA" main; do
+            docker tag app:check "$IMAGE:$tag"
+            docker push "$IMAGE:$tag"
+          done
+          docker inspect --format '{{index .RepoDigests 0}}' "$IMAGE:main" >> "$GITHUB_STEP_SUMMARY"
