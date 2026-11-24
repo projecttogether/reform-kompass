@@ -16,7 +16,7 @@
     "check": "npm run lint -- --max-warnings=0 && npm run typecheck && npm test && npm run build"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.137.0",
+    "@anthropic-ai/sdk": "^1.12.0",
     "better-auth": "^1.7.15",
     "drizzle-orm": "^0.45.4",
     "jspdf": "^4.2.1",
