@@ -184,7 +184,7 @@ test("OpenAI receives the same cached advice prompt, the effort and the conversa
   assert.equal(chatBody.stream, true);
   assert.equal(chatBody.prompt_cache_key, "reform-kompass-beratung");
   assert.deepEqual(chatBody.reasoning, { effort: "medium" });
-  assert.equal(chatBody.max_output_tokens, 4000);
+  assert.equal(chatBody.max_output_tokens, 5000);
   const [gemeinsam, anfrage, ...verlauf] = chatBody.input!;
   assert.deepEqual(gemeinsam, { role: "developer", content: readAdvicePrompt() });
   assert.equal(anfrage.role, "developer");

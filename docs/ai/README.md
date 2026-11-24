@@ -52,7 +52,7 @@ to Anthropic or OpenAI. The output token limits are set in the routes:
 | Task | Output token limit | Prompt caching |
 | --- | --- | --- |
 | Category explanation | 1,500 | None; the prompt is short and unique |
-| Advice chat | 4,000 | Shared advice prompt, plus the conversation for the next turn |
+| Advice chat | 5,000 | Shared advice prompt, plus the conversation for the next turn |
 | Action catalogue | 8,000 | Shared advice prompt |
 
 The three parts form the shared advice prompt: one unchanged first block that chat
