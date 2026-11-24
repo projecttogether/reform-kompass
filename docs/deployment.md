@@ -60,7 +60,7 @@ AI uses Anthropic or OpenAI. Set one provider key and `AI_MODEL`:
   accepts every level; an unsupported value makes provider requests fail.
 
 All three advice routes use the same model. Models that think or reason before
-answering spend part of the output token limit (1,500, 4,000 and 8,000 tokens) on
+answering spend part of the output token limit (1,500, 5,000 and 8,000 tokens) on
 it. After changing the model or effort, check explanations, follow-up questions
 and catalogues. Roll back by restoring the previous values and restarting.
 

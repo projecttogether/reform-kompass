@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
       if (ags) anweisungen += `\n\n${formatiereKommunalpolitik(await getKommunalpolitik().fuerBeratung(ags, WARTEZEIT_BERATUNG_MS))}`;
       anweisungen += `\n\n## Assessment-Ergebnisse\n\n${assessmentContext}\n\nNutze diese Daten als Ausgangspunkt der Beratung. Beziehe dich konkret auf Stärken und Schwächen. Priorisiere: Was hat den größten Hebel für diese Organisation?`;
 
-      return { mitBeratungsPrompt: true, anweisungen, nachrichten: messages, maxTokens: 4000, verlaufCachen: true, websuche: true };
+      return { mitBeratungsPrompt: true, anweisungen, nachrichten: messages, maxTokens: 5000, verlaufCachen: true, websuche: true };
     },
   });
 }
